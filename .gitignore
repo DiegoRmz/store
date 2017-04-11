@@ -1,0 +1,6 @@
+#Project "store" version 1.0
+
+#Folders to exclude from tracking
+
+imgs/
+
