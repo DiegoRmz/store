@@ -10,6 +10,7 @@
         <link rel = 'stylesheet' type = 'text/css' href = ''> 
 
         <!--References to JS scripts-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
         <script type = 'text/javascript' href = ''></script>
 
@@ -18,6 +19,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            })
+        </script>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -28,7 +34,20 @@
             <div class = 'nav-wrapper'>
                 <a href="#!" class="brand-logo">Logo</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <!--This will show when the screen  is on normal size-->
                 <ul class="right hide-on-med-and-down">
+                    <li><a href="">Departamento1</a></li>
+                    <li><a href="">Departamento2</a></li>
+                    <li><a href="">Departamento3</a></li>
+                    <li><a href="">Departamento4</a></li>
+                </ul>
+                <!--This will show when the screen  is on smaller size-->
+                <ul class = "side-nav" id = 'mobile-demo'>
+                    <li><a href="">Departamento1</a></li>
+                    <li><a href="">Departamento2</a></li>
+                    <li><a href="">Departamento3</a></li>
+                    <li><a href="">Departamento4</a></li>
+                </ul>
             </div>  
         </nav>
         <section>
